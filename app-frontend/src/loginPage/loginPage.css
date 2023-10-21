@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+.login-page {
+  background-image: url("../MountainLanding.jpg");
+  background-size: cover; /* This will make the image cover the entire element */
+  background-position: center; /* This will center the image within the element */
+
+  backdrop-filter: blur(20px);
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Optional: To make the container full height */
+}
+
+.login-container {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(
+    140deg,
+    rgba(232, 232, 232, 0.24) 1.8%,
+    rgba(142, 202, 205, 0.32) 90.75%
+  );
+  backdrop-filter: blur(20px);
+
+  width: 30rem;
+  height: fit-content;
+  text-align: left;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 25px;
+  /* padding: 20px; */
+
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.login-header-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-header {
+  flex: 1;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 10px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.login-signup-instead {
+  margin-top: 75px;
+  /* padding-top: 60px; */
+  font-size: 0.7rem;
+  color: #bef4be;
+}
+
+.login-signup-instead > a {
+  color: #bef4be;
+}
+
+div > input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: inherit;
+  margin-bottom: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  width: inherit;
+}
+
+div > input::placeholder {
+  opacity: 0.4;
+  color: #000;
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+div > input:focus {
+  outline: none;
+}
+.login-submit,
+.login-whoop {
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  background-color: #bef4be;
+  border-radius: 10px;
+
+  /* color: #fff; */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 300px;
+}
+
+.login-submit:hover,
+.login-whoop:hover {
+  background-color: rgba(190, 244, 190, 0.5);
+  font-weight: 700;
+  cursor: pointer;
+}
+.login-signup {
+  color: black;
+  font-family: "Lato";
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-signup > a {
+  text-decoration: none;
+
+  color: #bef4be;
+  font-family: "Lato";
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

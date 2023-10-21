@@ -1,0 +1,24 @@
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 24px; /* adjust the size if you wish */
+  transition: transform 0.3s ease-in-out;
+  background-color: #63d0d6; /* optional: for a slight "press" effect */
+}
+
+.menu-icon:active {
+  transform: scale(0.95); /* optional: for a slight "press" effect */
+}
+
+.sidebar {
+  /* Adjust the following properties based on your design requirements */
+  position: absolute;
+  top: 50px; /* Below the menu icon */
+  left: 20px;
+  width: 200px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}

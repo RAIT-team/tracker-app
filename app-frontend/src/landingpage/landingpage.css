@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landingpage-container {
+  background: url("../MountainLanding.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.content-box {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  padding: 10vh 10vw;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 90vw;
+  min-width: 300px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Styles specific to certain screen widths */
+@media screen and (max-width: 768px) {
+  /* This targets tablet devices and below */
+  .content-box {
+    padding: 5vh 5vw;
+  }
+  .slogan h1 {
+    font-size: 2rem;
+  }
+  .elevate {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* This targets mobile devices */
+  .content-box {
+    padding: 3vh 3vw;
+  }
+  .slogan h1 {
+    font-size: 1.5rem;
+  }
+  .rounded-button {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.rounded-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background: white; /* White button background */
+  color: #333; /* Button text color for contrast against white */
+  border: none; /* remove default border */
+  font-family: "Montserrat", sans-serif; /* Use the Montserrat font for the button */
+  font-weight: 600; /* Make font bolder */
+  letter-spacing: 1px; /* Increase spacing for better legibility */
+  position: relative; /* Set to relative since it's inside content-box now */
+  margin-top: 20px; /* Space from the paragraph above */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rounded-button:hover {
+  cursor: pointer;
+  background: rgba(144, 238, 144, 0.5); /* The same green on hover */
+  transform: scale(1.05); /* Slightly enlarging button on hover for effect */
+}
+
+.slogan {
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slogan h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white; /* Make the slogan text white for better contrast */
+}
+
+.elevate {
+  color: white; /* Make the elevate text white for better contrast */
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px; /* adjust the gap between menu items if needed */
+}
+
+.navbar a {
+  font-family: "Montserrat", sans-serif; /* This font is already used in your CSS */
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Adjust this size if needed */
+  padding: 5px 10px;
+  transition: border-bottom 0.3s ease; /* For smooth hover effect */
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid white; /* This will add an underline on hover */
+}
