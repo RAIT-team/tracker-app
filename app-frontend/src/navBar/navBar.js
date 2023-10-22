@@ -49,7 +49,9 @@ function NavBar() {
             </span>
           </div>
           <div className="icon logout-icon">
-            <FaSignOutAlt size={40} color="black" />
+            <a href="/login">
+              <FaSignOutAlt size={40} color="black" />
+            </a>
             {/* FontAwesome logout icon */}
             <span id="icon-text" style={icon_text_style}>
               Logout
