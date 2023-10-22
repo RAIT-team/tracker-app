@@ -32,40 +32,44 @@ function Dashboard() {
 
   return (
     <div className="dashboard-container">
-      <div className="greeting">
-        <span className={`word ${isVisibleHello ? "fade-in" : ""}`}>Hello</span>
-        <span className={`word ${isVisibleDave ? "fade-in" : ""}`}>Dave</span>
-      </div>
       <NavBar />
-      <div
-        className="placeholder-section"
-        style={{ marginLeft: `${isNavWidth}` }}
-      >
-        <div className="row">
-          <div className="placeholder map">
-            <FaMapMarkedAlt size={72} />
-            <span>Air Map</span>
-          </div>
-          <div className="placeholder analytics">
-            <FaChartBar size={72} />
-            <span>Analytics</span>
-          </div>
-          <a href="/risk" id="risk-link">
-            <div className="placeholder risk">
-              <FaExclamationTriangle size={72} />
-
-              <span>Current Risk</span>
-            </div>
-          </a>
+      <div className="dashboard-main-wrapper">
+        <div className="greeting">
+          <span className={`word ${isVisibleHello ? "fade-in" : ""}`}>
+            Hello,
+          </span>
+          <span className={`word ${isVisibleDave ? "fade-in" : ""}`}>Rob</span>
         </div>
-        <div className="row">
-          <div className="placeholder transport">
-            <FaBus size={72} />
-            <span>Transport Mode</span>
+        <div
+          className="placeholder-section"
+          style={{ marginLeft: `${isNavWidth}` }}
+        >
+          <div className="row">
+            <div className="placeholder map">
+              <FaMapMarkedAlt size={72} />
+              <span>Air Map</span>
+            </div>
+            <div className="placeholder analytics">
+              <FaChartBar size={72} />
+              <span>Analytics</span>
+            </div>
+            <a href="/risk" id="risk-link">
+              <div className="placeholder risk">
+                <FaExclamationTriangle size={72} />
+
+                <span>Current Risk</span>
+              </div>
+            </a>
           </div>
-          <div className="placeholder footprint">
-            <FaTree size={72} />
-            <span>Carbon Footprint</span>
+          <div className="row">
+            <div className="placeholder transport">
+              <FaBus size={72} />
+              <span>Transport Mode</span>
+            </div>
+            <div className="placeholder footprint">
+              <FaTree size={72} />
+              <span>Carbon Footprint</span>
+            </div>
           </div>
         </div>
       </div>

@@ -2,12 +2,20 @@
   --width: max-width;
 }
 
+/* Set box-sizing globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .dashboard-container {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   padding: 20px;
   background: linear-gradient(180deg, #8bc6ec 0%, #9599e2 100%);
 }
@@ -25,11 +33,16 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping for items in the row */
+}
+
+.row > * {
+  max-width: 100%; /* Ensure children don't overflow */
 }
 
 .placeholder {
   flex: 1;
-  height: 250px;
+  min-height: 250px; /* Set to min-height instead of fixed height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,12 +63,10 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 72px;
-  position: absolute;
-  top: 20px;
-  left: 50%; /* centered it to make it responsive */
-  transform: translateX(-50%); /* centered it to make it responsive */
+  transform: translateX(-50%);
   display: flex;
-  gap: 0.5rem; /* gap between Hello and Dave */
+  gap: 0.5rem;
+  margin-bottom: 20px;
 }
 
 .word {
@@ -71,27 +82,27 @@
 /* Responsiveness for smaller screens, e.g., mobile devices */
 @media (max-width: 768px) {
   .dashboard-container {
-    flex-direction: column; /* stack elements vertically on smaller screens */
+    flex-direction: column;
     align-items: center;
   }
 
   .greeting {
-    font-size: 48px; /* slightly reduce the font size */
+    font-size: 48px;
     top: 10px;
   }
 
   .placeholder-section {
-    margin-top: 30px; /* reduce margin */
+    margin-top: 30px;
   }
 
   .row {
-    flex-direction: column; /* stack placeholders vertically */
-    gap: 15px; /* reduce gap */
+    flex-direction: column;
+    gap: 15px;
   }
 
   .placeholder {
-    width: 80%; /* take up most of the screen width */
-    height: 200px; /* slightly reduce height */
+    width: 80%;
+    height: 100px;
   }
 }
 

@@ -37,7 +37,7 @@ function NavBar() {
         </div>
         <div className="icon-container">
           <div className="icon profile-icon">
-            <FaUser size={40} color="white" /> {/* FontAwesome profile icon */}
+            <FaUser size={40} color="black" /> {/* FontAwesome profile icon */}
             <span id="icon-text" style={icon_text_style}>
               Profile
             </span>
@@ -49,7 +49,7 @@ function NavBar() {
             </span>
           </div>
           <div className="icon logout-icon">
-            <FaSignOutAlt size={40} color="white" />{" "}
+            <FaSignOutAlt size={40} color="black" />
             {/* FontAwesome logout icon */}
             <span id="icon-text" style={icon_text_style}>
               Logout
