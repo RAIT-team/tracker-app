@@ -27,7 +27,7 @@ class Landingpage extends Component {
             {" "}
             {/* New content box */}
             <div className="slogan">
-              <h1>Cleaner Air, Healthier You</h1>
+              <h1>Cleaner Air, Healthier You.</h1>
             </div>
             <div className="elevate">
               <p>

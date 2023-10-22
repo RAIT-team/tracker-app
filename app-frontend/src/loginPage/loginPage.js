@@ -19,7 +19,8 @@ function LoginPage() {
       console.log("Widget session created:", response);
 
       // Redirect to Whoop website after widget session is created
-      window.location.href = "https://www.whoop.com";
+      window.location.href =
+        "https://widget.tryterra.co/session/2f9063bd-c672-4e82-9a95-d44b16cd32d4";
     } catch (error) {
       console.error("Error creating widget session:", error);
     }
