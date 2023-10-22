@@ -1,38 +1,43 @@
+/* HealthMetrics.css */
 .body-container {
+  height: 100vh;
+  margin: 0;
+  background-color: #2595ae;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  background: linear-gradient(to bottom, #2595ae, #fff);
 }
 
 .button-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .circle-button {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   color: #fff;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   position: relative;
-  margin: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 50px;
+  margin-top: 20px;
 }
 
 .circle-text {
@@ -44,11 +49,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  font-size: 22px;
 }
 
 .data-box {
   font-size: 24px;
   font-weight: normal;
   position: absolute;
-  bottom: 30%;
+  bottom: 35%;
 }
