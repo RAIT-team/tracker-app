@@ -38,13 +38,13 @@ function NavBar() {
         <div className="icon-container">
           <div className="icon profile-icon">
             <FaUser size={40} color="black" /> {/* FontAwesome profile icon */}
-            <span id="icon-text" style={icon_text_style}>
+            <span class="icon-text" style={icon_text_style}>
               Profile
             </span>
           </div>
           <div className="icon whoop-icon">
             <img alt="whoop-icon" src={whoopIcon} />
-            <span id="icon-text" style={icon_text_style}>
+            <span class="icon-text" style={icon_text_style}>
               My Whoop
             </span>
           </div>
@@ -53,7 +53,7 @@ function NavBar() {
               <FaSignOutAlt size={40} color="black" />
             </a>
             {/* FontAwesome logout icon */}
-            <span id="icon-text" style={icon_text_style}>
+            <span class="icon-text" style={icon_text_style}>
               Logout
             </span>
           </div>

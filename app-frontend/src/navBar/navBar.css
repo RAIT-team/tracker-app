@@ -62,3 +62,7 @@
 .icon:hover span {
   letter-spacing: 1px;
 }
+
+.icon-text {
+  color: black;
+}
