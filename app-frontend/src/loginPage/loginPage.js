@@ -13,10 +13,13 @@ function LoginPage() {
         showDisconnect: true, // Optional: boolean to show a disconnect option
       };
 
-      const response = await terraWidget(params);
+      const response = await terraWidget(params); // This line seems recursive. You probably have an external function or SDK method named terraWidget you want to call, but it's named the same as your local function.
 
       // Handle the response, which should contain data you need
       console.log("Widget session created:", response);
+
+      // Redirect to Whoop website after widget session is created
+      window.location.href = "https://www.whoop.com";
     } catch (error) {
       console.error("Error creating widget session:", error);
     }

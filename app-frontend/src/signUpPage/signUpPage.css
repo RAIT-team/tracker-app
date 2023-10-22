@@ -19,11 +19,8 @@
 .signup-container {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background: linear-gradient(
-    140deg,
-    rgba(232, 232, 232, 0.24) 1.8%,
-    rgba(142, 202, 205, 0.32) 90.75%
-  );
+  background: rgba(255, 255, 255, 0.1);
+
   backdrop-filter: blur(20px);
 
   width: 30rem;
@@ -47,7 +44,8 @@
 .signup-header {
   flex: 1;
   color: black;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;

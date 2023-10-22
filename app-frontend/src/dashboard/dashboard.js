@@ -1,33 +1,60 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
+import NavBar from "../navBar/navBar";
+import "./dashboard.css";
+import { navBarWidth } from "../navBar/navBar";
+
+import {
+  FaMapMarkedAlt,
+  FaChartBar,
+  FaExclamationTriangle,
+  FaBus,
+  FaTree,
+} from "react-icons/fa";
 
 function Dashboard() {
-  const [data, setData] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isNavWidth, setisNavWidth] = useState(0);
 
-  const fetchHistoricalData = async (startDate, endDate) => {
-    try {
-      const response = await axios.get(
-        "http://localhost:3001/historical-data",
-        {
-          params: {
-            startDate,
-            endDate,
-          },
-        }
-      );
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
-      setData(response.data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
+  useEffect(() => {
+    setisNavWidth(navBarWidth);
+  }, []);
   return (
-    <div>
-      <button onClick={() => fetchHistoricalData("2023-01-01", "2023-10-21")}>
-        Fetch Data
-      </button>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+    <div className="dashboard-container">
+      <div className={`greeting ${isVisible ? "fade-in" : ""}`}>Hello Dave</div>
+      <NavBar />
+      <div
+        className="placeholder-section"
+        style={{ marginLeft: `${isNavWidth}` }}
+      >
+        <div className="row">
+          <div className="placeholder map">
+            <FaMapMarkedAlt size={72} />
+            <span>Air Map</span>
+          </div>
+          <div className="placeholder analytics">
+            <FaChartBar size={72} />
+            <span>Analytics</span>
+          </div>
+          <div className="placeholder risk">
+            <FaExclamationTriangle size={72} />
+            <span>Current Risk</span>
+          </div>
+        </div>
+        <div className="row">
+          <div className="placeholder transport">
+            <FaBus size={72} />
+            <span>Transport Mode</span>
+          </div>
+          <div className="placeholder footprint">
+            <FaTree size={72} />
+            <span>Carbon Footprint</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

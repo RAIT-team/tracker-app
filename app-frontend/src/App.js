@@ -1,5 +1,4 @@
 import "./styles/App.css";
-import LocationPage from "./LocationPage.js";
 import Landingpage from "./landingpage/landingpage.js";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import LoginPage from "./loginPage/loginPage.js";
@@ -16,7 +15,6 @@ function App() {
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignUpPage} />
           <Route path="/dashboard" component={Dashboard} />
-          <Route path="/location" component={LocationPage} />
         </Switch>
       </BrowserRouter>
     </div>

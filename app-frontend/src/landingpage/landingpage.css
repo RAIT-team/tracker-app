@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .landingpage-container {
   background: url("../MountainLanding.jpg");
   background-size: cover;
@@ -33,11 +42,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.1);
+  opacity: 0; /* Start as invisible */
+  animation: fadeIn 2s forwards 1s;
 }
 
-/* Styles specific to certain screen widths */
 @media screen and (max-width: 768px) {
-  /* This targets tablet devices and below */
   .content-box {
     padding: 5vh 5vw;
   }
@@ -64,9 +73,10 @@
 }
 
 .rounded-button {
-  width: 200px;
+  width: 300px;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 10px;
+  padding: 15px;
   background: white; /* White button background */
   color: #333; /* Button text color for contrast against white */
   border: none; /* remove default border */
@@ -76,6 +86,10 @@
   position: relative; /* Set to relative since it's inside content-box now */
   margin-top: 20px; /* Space from the paragraph above */
   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-to-signup {
+  text-decoration: none;
 }
 
 .rounded-button:hover {
@@ -131,4 +145,9 @@
 
 .navbar a:hover {
   border-bottom: 2px solid white; /* This will add an underline on hover */
+}
+
+.navbar-logo {
+  height: 100px; /* Adjust this value if the logo appears too large or small */
+  margin-right: auto; /* Pushes the logo to the left side of the navbar */
 }

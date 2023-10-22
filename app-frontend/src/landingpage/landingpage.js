@@ -1,21 +1,23 @@
 import React, { Component } from "react";
 import "./landingpage.css";
-// import NavBar from "../navBar";
+import { Link } from "react-router-dom";
+import logo from "../logo.png";
 
 class Landingpage extends Component {
   render() {
     return (
       <div className="landingpage-container">
         <nav className="navbar">
+          <img src={logo} alt="Logo" className="navbar-logo" />
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="#about">About Us</a>
             </li>
             <li>
-              <a href="#login">Login</a>
+              <a href="/login">Login</a>
             </li>
           </ul>
         </nav>
@@ -29,10 +31,13 @@ class Landingpage extends Component {
             </div>
             <div className="elevate">
               <p>
-                Elevate Your Health With Instant Data for Safer, Cleaner Spaces.
+                Elevate Your Health With Instant Data for Safer and Cleaner
+                Spaces.
               </p>
             </div>
-            <button className="rounded-button"> Start Your Journey Now </button>
+            <a className="button-to-signup" href="/login">
+              <div className="rounded-button">Start Your Journey Now</div>
+            </a>
           </div>
         </div>
       </div>
