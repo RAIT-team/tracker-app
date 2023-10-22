@@ -36,7 +36,7 @@ function Dashboard() {
       <div className="dashboard-main-wrapper">
         <div className="greeting">
           <span className={`word ${isVisibleHello ? "fade-in" : ""}`}>
-            Hello,
+            Hello,&nbsp;
           </span>
           <span className={`word ${isVisibleDave ? "fade-in" : ""}`}>Rob</span>
         </div>
