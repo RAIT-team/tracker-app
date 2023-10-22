@@ -52,8 +52,8 @@
   font-size: 72px;
   position: absolute;
   top: 20px;
-  left: 25%;
-  transform: translateX(-25%);
+  left: 50%; /* centered it to make it responsive */
+  transform: translateX(-50%); /* centered it to make it responsive */
   display: flex;
   gap: 0.5rem; /* gap between Hello and Dave */
 }
@@ -66,4 +66,36 @@
 
 .fade-in {
   animation: fadeIn 1.5s forwards;
+}
+
+/* Responsiveness for smaller screens, e.g., mobile devices */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; /* stack elements vertically on smaller screens */
+    align-items: center;
+  }
+
+  .greeting {
+    font-size: 48px; /* slightly reduce the font size */
+    top: 10px;
+  }
+
+  .placeholder-section {
+    margin-top: 30px; /* reduce margin */
+  }
+
+  .row {
+    flex-direction: column; /* stack placeholders vertically */
+    gap: 15px; /* reduce gap */
+  }
+
+  .placeholder {
+    width: 80%; /* take up most of the screen width */
+    height: 200px; /* slightly reduce height */
+  }
+}
+
+#risk-link {
+  text-decoration: none;
+  color: inherit;
 }

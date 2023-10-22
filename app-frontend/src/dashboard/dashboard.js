@@ -50,10 +50,13 @@ function Dashboard() {
             <FaChartBar size={72} />
             <span>Analytics</span>
           </div>
-          <div className="placeholder risk">
-            <FaExclamationTriangle size={72} />
-            <span>Current Risk</span>
-          </div>
+          <a href="/risk" id="risk-link">
+            <div className="placeholder risk">
+              <FaExclamationTriangle size={72} />
+
+              <span>Current Risk</span>
+            </div>
+          </a>
         </div>
         <div className="row">
           <div className="placeholder transport">

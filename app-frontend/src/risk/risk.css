@@ -1,0 +1,48 @@
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #2595ae, #fff);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-text {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.data-box {
+  font-size: 24px;
+  font-weight: normal;
+  position: absolute;
+  bottom: 30%;
+}

@@ -5,6 +5,7 @@ import LoginPage from "./loginPage/loginPage.js";
 import navBar from "./navBar/navBar";
 import SignUpPage from "./signUpPage/signUpPage.js";
 import Dashboard from "./dashboard/dashboard.js";
+import Risk from "./risk/risk.js";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/login" component={LoginPage} />
           <Route path="/signup" component={SignUpPage} />
           <Route path="/dashboard" component={Dashboard} />
+          <Route path="/risk" component={Risk} />
         </Switch>
       </BrowserRouter>
     </div>
