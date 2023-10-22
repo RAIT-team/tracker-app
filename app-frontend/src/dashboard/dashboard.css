@@ -12,6 +12,7 @@
 .dashboard-container {
   /* display: flex;
   flex-direction: row; */
+
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -42,7 +43,8 @@
 
 .placeholder {
   flex: 1;
-  min-height: 250px; /* Set to min-height instead of fixed height */
+  min-height: 200px; /* Set to min-height instead of fixed height */
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,10 +65,9 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 72px;
-  transform: translateX(-50%);
-  display: flex;
   gap: 0.5rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .word {
