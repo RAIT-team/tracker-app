@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaUser, FaSignOutAlt } from "react-icons/fa"; // Import the required icons
 import "./navBar.css";
-import profileIcon from "../images/profile.png";
 import whoopIcon from "../images/whoop-icon.png";
-import logoutIcon from "../images/logout.png";
 
 let navBarWidth = 0;
 
@@ -39,7 +37,7 @@ function NavBar() {
         </div>
         <div className="icon-container">
           <div className="icon profile-icon">
-            <img alt="profileIcon" src={profileIcon} />
+            <FaUser size={40} color="white" /> {/* FontAwesome profile icon */}
             <span id="icon-text" style={icon_text_style}>
               Profile
             </span>
@@ -51,7 +49,8 @@ function NavBar() {
             </span>
           </div>
           <div className="icon logout-icon">
-            <img alt="logout-icon" src={logoutIcon} />
+            <FaSignOutAlt size={40} color="white" />{" "}
+            {/* FontAwesome logout icon */}
             <span id="icon-text" style={icon_text_style}>
               Logout
             </span>

@@ -24,7 +24,8 @@
   align-items: center;
   margin: 15px;
   color: white; /* White text for chic look */
-  font-weight: 600; /* Bolder font for chic look */
+  font-weight: 600;
+  cursor: pointer; /* Making the icon clickable */
 }
 
 .icon-container {
@@ -32,22 +33,29 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 30px 15px;
+  padding: 57px 10px;
+  background-color: #e0e0ff;
 }
 
-.icon img {
-  width: 40px; /* Smaller icons for cleaner look */
+.icon img,
+.icon svg {
+  /* Added svg selector for FontAwesome icons */
+  width: 40px;
   height: 40px;
   margin-right: 15px;
+  color: white;
 }
 
 /* Optional: Transition for smoother effect */
 .icon img,
+.icon svg, /* Added svg selector for FontAwesome icons */
 .icon span {
   transition: 0.3s;
 }
 
-.icon:hover img {
+.icon:hover img,
+.icon:hover svg {
+  /* Added svg selector for FontAwesome icons */
   transform: scale(1.1);
 }
 
