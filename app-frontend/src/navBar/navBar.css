@@ -1,51 +1,10 @@
-/* .menu-icon {
-  z-index: 2;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  cursor: pointer;
-  font-size: 24px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.menu-icon:active {
-  transform: scale(0.95); /* optional: for a slight "press" effect */
 .hamburger {
-  width: 30px;
-  height: 20px;
-
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
   cursor: pointer;
-  z-index: 44;
-  margin-top: 25px;
-}
-
-.bar {
-  width: 100%;
-  height: 2px;
-  background-color: #333;
-  transition: background-color 0.3s; /* Add a transition for the background-color property */
-}
-
-.hamburger:active .bar:active:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-.hamburger:hover .bar {
-  background-color: #555;
+  margin-top: 15px;
 }
 
 .sidebar {
@@ -54,7 +13,7 @@
   left: 0px;
   width: auto;
   height: 100vh;
-  background-color: #7ad8d8;
+  background-color: #333; /* Darker color for chic look */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1;
   transition: width 0.5s ease;
@@ -63,7 +22,9 @@
 .icon {
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
+  color: white; /* White text for chic look */
+  font-weight: 600; /* Bolder font for chic look */
 }
 
 .icon-container {
@@ -71,15 +32,25 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 60px 5px 2px 5px;
+  padding: 30px 15px;
 }
 
 .icon img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+  width: 40px; /* Smaller icons for cleaner look */
+  height: 40px;
+  margin-right: 15px;
 }
 
-/* #icon-text {
-  transition: width 0.3 ease;
-} */
+/* Optional: Transition for smoother effect */
+.icon img,
+.icon span {
+  transition: 0.3s;
+}
+
+.icon:hover img {
+  transform: scale(1.1);
+}
+
+.icon:hover span {
+  letter-spacing: 1px;
+}

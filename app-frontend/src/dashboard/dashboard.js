@@ -12,19 +12,30 @@ import {
 } from "react-icons/fa";
 
 function Dashboard() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisibleHello, setIsVisibleHello] = useState(false);
+  const [isVisibleDave, setIsVisibleDave] = useState(false);
   const [isNavWidth, setisNavWidth] = useState(0);
 
   useEffect(() => {
-    setIsVisible(true);
+    setIsVisibleHello(true);
+
+    const timeout = setTimeout(() => {
+      setIsVisibleDave(true);
+    }, 1000); // 1.5 seconds delay before Dave appears after Hello
+
+    return () => clearTimeout(timeout);
   }, []);
 
   useEffect(() => {
     setisNavWidth(navBarWidth);
   }, []);
+
   return (
     <div className="dashboard-container">
-      <div className={`greeting ${isVisible ? "fade-in" : ""}`}>Hello Dave</div>
+      <div className="greeting">
+        <span className={`word ${isVisibleHello ? "fade-in" : ""}`}>Hello</span>
+        <span className={`word ${isVisibleDave ? "fade-in" : ""}`}>Dave</span>
+      </div>
       <NavBar />
       <div
         className="placeholder-section"

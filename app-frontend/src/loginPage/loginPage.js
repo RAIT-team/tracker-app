@@ -42,7 +42,9 @@ function LoginPage() {
           <div className="login-pw">
             <input placeholder="Password"></input>
           </div>
-          <button className="login-submit">Sign In</button>
+          <a href="/dashboard">
+            <button className="login-submit">Sign In</button>
+          </a>
           <button className="login-whoop" onClick={terraWidget}>
             Login With Whoop
           </button>
