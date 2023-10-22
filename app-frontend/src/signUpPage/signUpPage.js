@@ -50,7 +50,9 @@ class SignUpPage extends Component {
                 ></input>
               </div>
 
-              <button className="signup-submit">Save and Continue</button>
+              <a href="/dashboard">
+                <button className="signup-submit">Save and Continue</button>
+              </a>
             </div>
           </div>
         </div>
