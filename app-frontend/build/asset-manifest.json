@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e59161d.css",
+    "main.js": "/static/js/main.77818f4d.js",
+    "static/js/787.ba126eb5.chunk.js": "/static/js/787.ba126eb5.chunk.js",
+    "static/media/MountainLanding.jpg": "/static/media/MountainLanding.3062805cacb7d2afba75.jpg",
+    "static/media/logo.png": "/static/media/logo.3c33e99a1976a6d7a4d0.png",
+    "static/media/whoop-icon.png": "/static/media/whoop-icon.3fa206057a4a37c0939c.png",
+    "index.html": "/index.html",
+    "main.1e59161d.css.map": "/static/css/main.1e59161d.css.map",
+    "main.77818f4d.js.map": "/static/js/main.77818f4d.js.map",
+    "787.ba126eb5.chunk.js.map": "/static/js/787.ba126eb5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e59161d.css",
+    "static/js/main.77818f4d.js"
+  ]
+}
