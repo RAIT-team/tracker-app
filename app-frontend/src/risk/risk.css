@@ -2,7 +2,7 @@
 .body-container {
   height: 100vh;
   margin: 0;
-  background-color: #2595ae;
+  background: linear-gradient(180deg, #8bc6ec 0%, #9599e2 100%);
   display: flex;
   justify-content: center;
   align-items: center;

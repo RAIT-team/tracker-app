@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./risk.css";
+import Nav from "../navBar/navBar.js";
 
 function Risk() {
   const [avgBPM, setAvgBPM] = useState(70);
@@ -68,6 +69,7 @@ function Risk() {
 
   return (
     <div className="body-container">
+      <Nav />
       <div className="button-container">
         <div className="circle-button" id="circle1">
           <div className="circle-text">Exercise Level</div>
